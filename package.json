@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run build:live",
     "build": "tsc -p .",
-    "prod": "node lib/index.js",
+    "prod": "node lib/frameworks/web-server/index.js",
     "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/frameworks/web-server/index.ts",
     "lint": "npx prettier --write .",
     "test": "jest",
